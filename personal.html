@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión del Personal Administrativo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5"><a href="index.html">Personal Administrativo</a></h1>
+        <form id="form-personal" class="mt-4">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="profesion">Profesión</label>
+                <input type="text" class="form-control" id="profesion" name="profesion" required>
+            </div>
+            <div class="form-group">
+                <label for="permisos">Permisos</label>
+                <select class="form-control" id="permisos" name="permisos" required>
+                    <option value="admin">Administrador</option>
+                    <option value="Acceso a salas">Guardia</option>
+                    <option value="Acceso a consultas">Médico</option>
+                    <option value="Acceso a consultas psicologicas">Psicólogo</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Trabajador</button>
+        </form>
+        <h2 class="mt-5">Lista de Personal Administrativo</h2>
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Profesión</th>
+                    <th>Permisos</th>
+                </tr>
+            </thead>
+            <tbody id="lista-personal">
+                <!-- Lista cargada dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/personal.js"></script>
+</body>
+</html>

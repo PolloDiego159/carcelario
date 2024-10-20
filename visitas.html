@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Visitas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5"><a href="index.html">Control de Visitas</a></h1>
+        <form id="form-visita" class="mt-4">
+            <div class="form-group">
+                <label for="visitante">Nombre del Visitante</label>
+                <input type="text" class="form-control" id="visitante" name="visitante" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_visita">Fecha de la Visita</label>
+                <input type="date" class="form-control" id="fecha_visita" name="fecha_visita" required>
+            </div>
+            <div class="form-group">
+                <label for="recluso">Recluso Visitado</label>
+                <select class="form-control" id="recluso" name="recluso" required>
+                    <!-- Opciones cargadas dinámicamente -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar Visita</button>
+        </form>
+        <h2 class="mt-5">Historial de Visitas</h2>
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Visitante</th>
+                    <th>Fecha de Visita</th>
+                    <th>Recluso Visitado</th>
+                </tr>
+            </thead>
+            <tbody id="historial-visitas">
+                <!-- Historial cargado dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/reclusos.js"></script>
+    <script src="js/visitas.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Actividades</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5"><a href="index.html">Reporte de Actividades</a></h1>
+        <form id="form-reporte" class="mt-4">
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" class="form-control" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="num_eventos">Número de Eventos</label>
+                <input type="number" class="form-control" id="num_eventos" name="num_eventos" required>
+            </div>
+            <div class="form-group">
+                <label for="num_actividades">Número de Actividades Recreativas</label>
+                <input type="number" class="form-control" id="num_actividades" name="num_actividades" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Generar Reporte</button>
+        </form>
+        <h2 class="mt-5">Reportes Diarios</h2>
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Número de Visitas</th>
+                    <th>Número de Eventos</th>
+                    <th>Número de Actividades Recreativas</th>
+                </tr>
+            </thead>
+            <tbody id="lista-reportes">
+                <!-- Lista cargada dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/reportes.js"></script>
+</body>
+</html>

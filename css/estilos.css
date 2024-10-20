@@ -1,0 +1,13 @@
+/* estilos.css */
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+}
